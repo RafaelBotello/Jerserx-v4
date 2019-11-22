@@ -1,6 +1,6 @@
 # Jersey X
 
-An Ecommerce website built in react using API's to connect to a MYSQL database.
+An Ecommerce website built in react using API's to connect to a MongoDB database.
 
 ---
 

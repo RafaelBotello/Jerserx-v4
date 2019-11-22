@@ -1,4 +1,5 @@
 import React from "../../../node_modules/react";
+import { Link } from "react-router-dom";
 import "./style.css";
 
 function Navbar(props) {
@@ -27,31 +28,34 @@ function Navbar(props) {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav  droptoggle mr-auto mt-2 mt-lg-0">
-            <li className={props.classli1}>
-              <a className="nav-link" href="/">
-                Home{" "}
-              </a>
-            </li>
-            <li className={props.classli2}>
-              <a className="nav-link" href="/product">
-                Products<span className="sr-only">(current)</span>
-              </a>
-            </li>
-            <li className={props.classli3}>
-              <a className="nav-link" href="/contact">
-                Contact
-              </a>
-            </li>
-            <li className={props.classli4}>
-              <a className="nav-link" href="/login">
-                LogIn
-              </a>
-            </li>
-            <li className={props.classli5}>
-              <a className="nav-link" href="/signup">
-                SignUp
-              </a>
-            </li>
+            <Link to="/" className="nav-link">
+              Home
+            </Link>
+            <Link to="/product" className="nav-link">
+              Products
+            </Link>
+            <Link to="/contact" className="nav-link">
+              Contact
+            </Link>
+            {props.currentUser ? (
+              <React.Fragment>
+                <Link to="/admin" className="nav-link">
+                  Admin
+                </Link>
+                <Link to="/logout" className="nav-link">
+                  Log Out
+                </Link>
+              </React.Fragment>
+            ) : (
+              <React.Fragment>
+                <Link to="/login" className="nav-link">
+                  Log In
+                </Link>
+                <Link to="/signup" className="nav-link">
+                  SignUp
+                </Link>
+              </React.Fragment>
+            )}
           </ul>
         </div>
       </nav>

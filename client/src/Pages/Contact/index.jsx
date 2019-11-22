@@ -14,11 +14,6 @@ function ContactPage() {
   };
   return (
     <div>
-      <Navbar
-        classli1={"nav-item"}
-        classli2={"nav-item"}
-        classli3={"nav-item active"}
-      />
       <div className="parallax parallax-2" />
       <div className="container-fluid text-dak" style={block}>
         <section>

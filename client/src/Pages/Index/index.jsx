@@ -22,11 +22,6 @@ function Home() {
 
   return (
     <div>
-      <Navbar
-        classli1={"nav-item active"}
-        classli2={"nav-item"}
-        classli3={"nav-item"}
-      />
       <div
         id="carouselIndicators"
         className="carousel slide"

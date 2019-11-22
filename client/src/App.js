@@ -10,6 +10,7 @@ import httpClient from "./httpClient";
 import LogOut from "./Pages/LogOut";
 import SignUp from "./Pages/SignUp";
 import LogIn from "./Pages/LogIn";
+import Navbar from "./Components/Navbar";
 
 class App extends React.Component {
   state = { currentUser: httpClient.getCurrentUser() };
@@ -26,6 +27,7 @@ class App extends React.Component {
     const { currentUser } = this.state;
     return (
       <div className="App">
+        <Navbar currentUser={currentUser}></Navbar>
         <Switch>
           <Route
             path="/login"

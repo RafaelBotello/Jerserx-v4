@@ -77,11 +77,6 @@ class ProductsPage extends React.Component {
     return (
       <>
         <div className="container-fluid" style={this.maincont}>
-          <Navbar
-            classli1={"nav-item"}
-            classli2={"nav-item active"}
-            classli3={"nav-item"}
-          />
           <div className="row main-cont">
             <Filters
               handleFilter={this.onHandleFilter}

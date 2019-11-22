@@ -33,13 +33,6 @@ class LogIn extends React.Component {
     const { email, password } = this.state.fields;
     return (
       <div className="logincontainer">
-        <Navbar
-          classli1={"nav-item"}
-          classli2={"nav-item"}
-          classli3={"nav-item"}
-          classli4={"nav-item active"}
-          classli5={"nav-item"}
-        />
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-2"></div>
