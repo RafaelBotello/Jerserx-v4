@@ -11,6 +11,7 @@ import LogOut from "./Pages/LogOut";
 import SignUp from "./Pages/SignUp";
 import LogIn from "./Pages/LogIn";
 import Navbar from "./Components/Navbar";
+import { Admin } from "./Pages/Admin";
 
 class App extends React.Component {
   state = { currentUser: httpClient.getCurrentUser() };
@@ -63,6 +64,7 @@ class App extends React.Component {
           <Route exact path="/" component={Index} />
           <Route exact path="/product" component={ProductsPage} />
           <Route exact path="/contact" component={ContactsPage} />
+          <Route exact path="/admin" component={Admin} />
         </Switch>
       </div>
     );
