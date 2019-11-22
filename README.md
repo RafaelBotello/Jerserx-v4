@@ -1,6 +1,6 @@
 # Jersey X
 
-An Ecommerce website built in react using API's to connect to a MongoDB database.
+An Ecommerce website that serves an ExpressJS JSON api to a React client application. The React application is configured for a basic JWT authentication flow **WITHOUT** using redux. Great for those of you that are somewhat familiar with Node, Express, and Mongoose, but want to see an implementation of React + React Router with JWT authentication.
 
 ---
 
@@ -49,8 +49,8 @@ After installing node, this project will need yarn too, so just run the followin
 
 ## Install
 
-    $ git clone https://github.com/RafaelBotello/JerseyXecommerce-V3
-    $ cd JerseyXecommerce-v3
+    $ git clone https://github.com/RafaelBotello/Jerseyx-v4
+    $ cd Jerseyx-v4
     $ yarn install
 
 ## Running the project
